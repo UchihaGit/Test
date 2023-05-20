@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div>
+    <button type="button" class="btn1" name="button">
+      < </button> <img class="img-slider" src="Screenshot1.png" name="slide" alt="">
+        <button type="button" class="btn2" name="button"> > </button>
+  </div>
+  <p id="demo"></p>
+  <script>
+  class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+  get cnam() {
+    console.log("1");
+    return this.carname;
+  }
+  set cnam(x) {
+    console.log("2");
+    this.carname = x;
+  }
+}
+
+let myCar = new Car("Ford");
+myCar.cnam = "text";
+document.getElementById("demo").innerHTML = myCar.cnam;
+  </script>
+</body>
+
+</html>
